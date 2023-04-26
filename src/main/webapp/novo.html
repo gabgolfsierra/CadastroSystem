@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>CBLB Cadastro</title>
+<link rel="icon" href="imagens/plates.png">
+<link rel="stylesheet" href="styleNovo.css">
+
+<style>
+body {
+	background-image: linear-gradient(to left, #1b1e23, #1e2229, #21252d, #272c36, #2c313c);
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+</style>
+
+</head>
+
+<body>
+	<h1>Novo Atleta</h1>
+	<form name="frmAtleta" action="insert">
+		<fieldset>
+			<legend>INFORMAÇÕES DO ATLETA</legend>
+			<p></p>
+			<label for="nome">Nome:</label><br> <input type="text" id="nome"
+				name="nome"><br> <br> <label for="categoria">Categoria:</label><br>
+			<input type="text" id="categoria" name="categoria"><br> <br>
+			<label for="total">Total:</label><br> <input type="text"
+				id="total" name="total"><br> <br>
+		</fieldset>
+		<p></p>
+
+		<button onclick="validar()">Adicionar</button>
+	</form>
+
+	<script src="scripts/validador.js"></script>
+</body>
+</html>
